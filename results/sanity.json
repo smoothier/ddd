@@ -1,0 +1,129 @@
+{"version":"3","listProblem":[{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "kotlin",
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "[MISSING_DEPENDENCY_CLASS] Cannot access class 'org.gradle.accessors.dm.LibrariesForLibs'. Check your module classpath for missing or conflicting dependencies",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "build.gradle.kts",
+      "language": "kotlin",
+      "line": 23,
+      "offset": 16,
+      "length": 4,
+      "code": {
+        "startLine": 21,
+        "length": 4,
+        "offset": 32,
+        "surroundingCode": "\ndependencies {\n    compileOnly(libs.org.jetbrains.annotations)\n    testCompileOnly(libs.org.jetbrains.annotations)\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "ddd",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "638365015535720803"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "kotlin",
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "[UNRESOLVED_REFERENCE] Unresolved reference: org",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "build.gradle.kts",
+      "language": "kotlin",
+      "line": 23,
+      "offset": 21,
+      "length": 3,
+      "code": {
+        "startLine": 21,
+        "length": 3,
+        "offset": 37,
+        "surroundingCode": "\ndependencies {\n    compileOnly(libs.org.jetbrains.annotations)\n    testCompileOnly(libs.org.jetbrains.annotations)\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "ddd",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "8462296422351062090"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "kotlin",
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "[MISSING_DEPENDENCY_CLASS] Cannot access class 'org.gradle.accessors.dm.LibrariesForLibs'. Check your module classpath for missing or conflicting dependencies",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "build.gradle.kts",
+      "language": "kotlin",
+      "line": 24,
+      "offset": 20,
+      "length": 4,
+      "code": {
+        "startLine": 22,
+        "length": 4,
+        "offset": 83,
+        "surroundingCode": "dependencies {\n    compileOnly(libs.org.jetbrains.annotations)\n    testCompileOnly(libs.org.jetbrains.annotations)\n\n    testImplementation(libs.org.junit.jupiter.api)"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "ddd",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "-4077723208663487121"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "kotlin",
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "[UNRESOLVED_REFERENCE] Unresolved reference: org",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "build.gradle.kts",
+      "language": "kotlin",
+      "line": 24,
+      "offset": 25,
+      "length": 3,
+      "code": {
+        "startLine": 22,
+        "length": 3,
+        "offset": 88,
+        "surroundingCode": "dependencies {\n    compileOnly(libs.org.jetbrains.annotations)\n    testCompileOnly(libs.org.jetbrains.annotations)\n\n    testImplementation(libs.org.junit.jupiter.api)"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "ddd",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "-910761614073544452"
+}]}

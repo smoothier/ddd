@@ -1,0 +1,16 @@
+{
+  "modules": [
+    {
+      "name": "ddd",
+      "languageLevel": 17
+    },
+    {
+      "name": "ddd.test",
+      "languageLevel": 17
+    },
+    {
+      "name": "ddd.main",
+      "languageLevel": 17
+    }
+  ]
+}

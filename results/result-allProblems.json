@@ -1,0 +1,141 @@
+{"version":"3","listProblem":[{
+  "tool": "Code Inspection",
+  "category": "Inheritance issues",
+  "type": "Abstract class which has no concrete subclass",
+  "severity": "High",
+  "comment": "Abstract class `Entity` has no concrete subclass",
+  "detailsInfo": "Reports `abstract` classes that have no concrete subclasses.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/com/github/smoothier/ddd/domain/base/Entity.java",
+      "language": "JAVA",
+      "line": 5,
+      "offset": 23,
+      "length": 6,
+      "code": {
+        "startLine": 3,
+        "length": 6,
+        "offset": 65,
+        "surroundingCode": "import org.jetbrains.annotations.NotNull;\n\npublic abstract class Entity<E extends DomainEvent> {\n\t\n\tprotected abstract void emit(final @NotNull E event);"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "ddd.main",
+    "inspectionName": "AbstractClassNeverImplemented"
+  },
+  "hash": "96ea7758a07b336fea64604058f4a2cb1e14f08967b49b07f3697077284c9005"
+},{
+  "tool": "Code Inspection",
+  "category": "Inheritance issues",
+  "type": "Abstract class which has no concrete subclass",
+  "severity": "High",
+  "comment": "Abstract class `Aggregate` has no concrete subclass",
+  "detailsInfo": "Reports `abstract` classes that have no concrete subclasses.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/com/github/smoothier/ddd/domain/base/Aggregate.java",
+      "language": "JAVA",
+      "line": 3,
+      "offset": 23,
+      "length": 9,
+      "code": {
+        "startLine": 1,
+        "length": 9,
+        "offset": 69,
+        "surroundingCode": "package com.github.smoothier.ddd.domain.base;\n\npublic abstract class Aggregate<E extends DomainEvent> extends Entity<E> {\n\n}"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "ddd.main",
+    "inspectionName": "AbstractClassNeverImplemented"
+  },
+  "hash": "3af8a8ef25ea3e1b3286f3e3284970196885f530319885477796d75ea05b57d8"
+},{
+  "tool": "Code Inspection",
+  "category": "Inheritance issues",
+  "type": "Abstract class which has no concrete subclass",
+  "severity": "High",
+  "comment": "Abstract class `LeafEntity` has no concrete subclass",
+  "detailsInfo": "Reports `abstract` classes that have no concrete subclasses.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/com/github/smoothier/ddd/domain/base/LeafEntity.java",
+      "language": "JAVA",
+      "line": 7,
+      "offset": 23,
+      "length": 10,
+      "code": {
+        "startLine": 5,
+        "length": 10,
+        "offset": 49,
+        "surroundingCode": "import java.util.Objects;\n\npublic abstract class LeafEntity<E extends DomainEvent> extends Entity<E> {\n\tprotected final Aggregate<? super E> context;\n\t"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "ddd.main",
+    "inspectionName": "AbstractClassNeverImplemented"
+  },
+  "hash": "70ac22a3dc36d0b6b3f344c3c8af556157bb360f915516d12fedf4373a8ad8d3"
+},{
+  "tool": "Code Inspection",
+  "category": "Inheritance issues",
+  "type": "Abstract class which has no concrete subclass",
+  "severity": "High",
+  "comment": "Abstract class `AggregateRoot` has no concrete subclass",
+  "detailsInfo": "Reports `abstract` classes that have no concrete subclasses.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/com/github/smoothier/ddd/domain/base/AggregateRoot.java",
+      "language": "JAVA",
+      "line": 10,
+      "offset": 23,
+      "length": 13,
+      "code": {
+        "startLine": 8,
+        "length": 13,
+        "offset": 46,
+        "surroundingCode": "import java.util.List;\n\npublic abstract class AggregateRoot<DOMAIN_EVENT extends DomainEvent> extends Aggregate<DOMAIN_EVENT> {\n\tprivate final transient @NotNull List<@NotNull DOMAIN_EVENT> domainEvents = new LinkedList<>();\n\t"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "ddd.main",
+    "inspectionName": "AbstractClassNeverImplemented"
+  },
+  "hash": "589458753e9527aecce5eb1e9459dbce0577a906bd5b420a4afaefe17bc81f98"
+},{
+  "tool": "Code Inspection",
+  "category": "Inheritance issues",
+  "type": "Abstract class which has no concrete subclass",
+  "severity": "High",
+  "comment": "Abstract class `CompositeEntity` has no concrete subclass",
+  "detailsInfo": "Reports `abstract` classes that have no concrete subclasses.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/com/github/smoothier/ddd/domain/base/CompositeEntity.java",
+      "language": "JAVA",
+      "line": 7,
+      "offset": 23,
+      "length": 15,
+      "code": {
+        "startLine": 5,
+        "length": 15,
+        "offset": 49,
+        "surroundingCode": "import java.util.Objects;\n\npublic abstract class CompositeEntity<E extends DomainEvent> extends Aggregate<E> {\n\tprotected final Aggregate<? super E> context;\n\t"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "ddd.main",
+    "inspectionName": "AbstractClassNeverImplemented"
+  },
+  "hash": "5974a7c2c6af8cbf25a58a89e896eeac4319de42c225bb4d5dd3e985d58ad87d"
+}]}

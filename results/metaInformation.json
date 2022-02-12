@@ -4,13 +4,6 @@
     "Code Inspection": 5
   },
   "attributes": {
-    "vcs": {
-      "sarifIdea": {
-        "repositoryUri": "https://github.com/smoothier/ddd",
-        "revisionId": "bdd9dc037abc5ae2f87ad65a6662820c493e02f6",
-        "branch": "master"
-      }
-    },
     "deviceId": "200820300000000-db1e-6c27-a0b1-6a41dcb301af"
   }
 }

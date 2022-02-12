@@ -1,0 +1,11 @@
+[versions]
+junit = "5.8.2"
+
+[libraries]
+org-jetbrains-annotations = { group = "org.jetbrains", name = "annotations", version = "22.0.0"}
+org-junit-jupiter-api = {group = "org.junit.jupiter", name = "junit-jupiter-api", version.ref = "junit" }
+org-junit-jupiter-engine = {group = "org.junit.jupiter", name = "junit-jupiter-engine", version.ref = "junit" }
+
+[bundles]
+
+[plugins]

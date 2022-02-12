@@ -20,15 +20,11 @@ repositories {
 }
 
 dependencies {
-    testImplementation(platform("org.junit:junit-bom:5.8.2"))
-}
+    compileOnly(libs.org.jetbrains.annotations)
+    testCompileOnly(libs.org.jetbrains.annotations)
 
-dependencies {
-    compileOnly("org.jetbrains:annotations:22.0.0")
-    testCompileOnly("org.jetbrains:annotations:22.0.0")
-
-    testImplementation("org.junit.jupiter:junit-jupiter-api")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+    testImplementation(libs.org.junit.jupiter.api)
+    testRuntimeOnly(libs.org.junit.jupiter.engine)
 }
 
 java {

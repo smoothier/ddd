@@ -37,4 +37,6 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: build/reports/codequality/qodana
         destination_dir: ./
+        publish_branch: pages
+        
   

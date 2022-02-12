@@ -31,4 +31,10 @@ jobs:
     - uses: github/codeql-action/upload-sarif@v1
       with:
         sarif_file: build/data/codequality/qodana/qodana.sarif.json
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: build/reports/codequality/qodana
+        destination_dir: ./
   

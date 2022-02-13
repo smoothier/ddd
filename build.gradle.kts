@@ -15,10 +15,6 @@ project.extra["reportsDir"] = file("$buildDir/reports")
 project.extra["dataDir"] = file("$buildDir/data")
 project.extra["javaVersion"] = 17
 
-repositories {
-    mavenCentral()
-}
-
 dependencies {
     compileOnly(libs.org.jetbrains.annotations)
     testCompileOnly(libs.org.jetbrains.annotations)

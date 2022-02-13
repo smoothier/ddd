@@ -1,5 +1,5 @@
 [versions]
-junit = "5.8.2"
+junit = "5.8.+"
 
 [libraries]
 org-jetbrains-annotations = { group = "org.jetbrains", name = "annotations", version = "22.0.0"}

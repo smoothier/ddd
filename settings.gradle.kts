@@ -4,7 +4,6 @@ enableFeaturePreview("VERSION_CATALOGS")
 // == Define locations for components ==
 dependencyResolutionManagement {
     repositories {
-        google()
         mavenCentral()
         gradlePluginPortal()
     }
